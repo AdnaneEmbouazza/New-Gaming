@@ -1,0 +1,138 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('../photo/photo-presentation.jpg');
+    /*background-size: cover;*/
+    background-position: center;
+    padding: 0 20px;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #0089ed;
+    color: white;
+    cursor: pointer;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-connexion, .btn-inscription {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-connexion {
+    background: #0089ed;
+}
+
+.btn-inscription {
+    background: #0089ed;
+}
+
+.btn-connexion a, .btn-inscription a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-connexion:hover {
+    background: #01426c;
+}
+
+.btn-inscription:hover {
+    background: #01426c;
+}
+
+.btn-deconnexion, .btn-profil {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-deconnexion {
+    background: #0089ed;
+}
+
+.btn-profil {
+    background: #0089ed;
+}
+.btn-deconnexion a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-profil a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-panier {
+    background-color: #4CAF50;
+}
+
+.btn-panier a {
+    position: relative;
+    display: inline-block;
+}
+
+.panier-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    min-width: 15px;
+    text-align: center;
+}

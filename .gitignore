@@ -1,0 +1,9 @@
+# Ignorer tous les dossiers .idea n'importe où
+.idea/
+**/.idea/
+
+# Ignorer tous les fichiers image
+*.jpg
+*.jpeg
+*.png
+*.gif

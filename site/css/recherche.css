@@ -1,0 +1,61 @@
+.resultats-recherche {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.resultats-titre {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.jeux-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.jeu-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.jeu-card:hover {
+    transform: translateY(-5px);
+}
+
+.jeu-title {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+}
+
+.jeu-info {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.jeu-prix {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.btn-details {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-details:hover {
+    background: #2980b9;
+}

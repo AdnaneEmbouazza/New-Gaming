@@ -1,0 +1,71 @@
+body {
+    background-color: #3a4b5c;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 jeux par ligne */
+    gap: 15px;
+    padding: 0 15px;
+    margin-top: 50px;
+    /*background-color: #ffffff;*/
+}
+
+.jeu-card {
+    background-color: #1c2939;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+.jeu-card img {
+    width: 100%;
+    height: 180px; /* Hauteur réduite */
+    object-fit: contain; /* Pour éviter la déformation */
+    display: block;
+    background-color: #222; /* Fond sombre pour les images */
+}
+
+.jeu-title {
+    color: #ffffff;
+    font-size: 0.9em; /* Taille de police réduite */
+    margin: 8px;
+    font-weight: 500;
+}
+
+.jeu-info {
+    color: #999;
+    font-size: 0.8em;
+    margin: 4px 8px;
+    margin-bottom: 12px;
+}
+
+.btn-savoir-plus {
+    background-color: #0089ed;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin: 8px;
+    width: calc(100% - 16px);
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(255, 71, 87, 0.2);
+}
+
+.btn-savoir-plus:hover {
+    background-color: #0b7fd6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 71, 87, 0.3);
+}
+
+.btn-savoir-plus:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(26, 159, 255, 0.2);
+}

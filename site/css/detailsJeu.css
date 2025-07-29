@@ -1,0 +1,149 @@
+body {
+    background-color: #3a4b5c;
+}
+
+.presentation-container {
+    margin-top: 50px; /* Espace après le header */
+    padding: 20px;
+    max-width: 1200px; /* Raccourcir les côtés */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1b2838;
+    color: #c6d4df;
+    font-family: Arial, sans-serif;
+}
+
+.jeu-header {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.jeu-images {
+    width: 70%; /* Agrandir le conteneur des images */
+}
+
+.image-principale {
+    width: 100%;
+    height: 500px; /* Agrandir l'image principale */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.miniatures {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.miniature {
+    width: 150px; /* Agrandir les miniatures */
+    height: 85px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.miniature:hover {
+    opacity: 0.8;
+}
+
+.jeu-info {
+    width: 30%; /* Ajuster la largeur des infos */
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.affiche-jeu {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.info-detail {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.prix {
+    font-size: 24px;
+    color: #a4d007;
+    margin: 20px 0;
+}
+
+.restriction-age {
+    display: inline-block;
+    background: #c74343;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.btn-ajouter-panier {
+    margin-bottom: 15px;
+}
+
+.btn-action {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-action:hover {
+    background-color: #45a049;
+}
+
+.btn-retour {
+    display: inline-block;
+    background: #1a9fff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.btn-retour:hover {
+    background: #0b7fd6;
+}
+
+.critiques-section {
+    margin-top: 30px; /* Ajoute de l'espace entre les infos du jeu et les critiques */
+    background: rgba(0, 0, 0, 0.2); /* Pour être cohérent avec le style sombre */
+    padding: 1.5rem;
+    border-radius: 4px;
+    color: #c6d4df; /* Pour être cohérent avec le texte du site */
+}
+
+.critique {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.critique-header {
+    display: flex;
+    justify-content: space-between;
+    color: #8f98a0;
+    margin-bottom: 0.5rem;
+}
+
+.ajouter-critique {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group input[type="number"],
+.form-group textarea {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #c6d4df;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
