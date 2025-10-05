@@ -7,6 +7,9 @@
  * Cette classe fournit un point d'accès unique à la connexion PDO.
  * Elle utilise les variables d'environnement pour la configuration.
  */
+
+
+
 final class PostgreSQLDB
 {
     /** @var ?PDO Instance unique de connexion PDO */
@@ -25,15 +28,31 @@ final class PostgreSQLDB
      */
     private static function connexionDB():void
     {
+        $env = file(__DIR__ . '../../../../.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+foreach ($env as $line) {
+    if (strpos(trim($line), '#') === 0) continue; // ignorer les commentaires
+    [$key, $value] = explode('=', $line, 2);
+    $_ENV[trim($key)] = trim($value);
+}
+
+// Récupérer les variables
+$host = $_ENV['DB_HOST'] ?? 'localhost';
+$port = $_ENV['DB_PORT'] ?? '5432';
+$dbname = $_ENV['DB_NAME'] ?? '';
+$user = $_ENV['DB_USERNAME'] ?? '';
+$password = $_ENV['DB_PASSWORD'] ?? '';;
+
         try {
             self::$connexion = new PDO(
                 sprintf(
                     "pgsql:host=%s;port=%s;dbname=%s;user=%s;password=%s",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    $host,
+                    $port,
+                    $dbname,
+                    $user,
+                    $password
+                    
                 )
             );
 //            print("Connexion à la base de données PostgreSQL réussie\n");
